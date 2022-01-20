@@ -1,0 +1,13 @@
+@font-face {
+   font-family: "Gordita";
+   src: url('../fonts/Gordita/Gordita-Regular.woff2') format('woff2'),
+      url('../fonts/Gordita/Gordita-Regular.woff') format('woff');
+   font-display: swap;
+}
+
+@font-face {
+   font-family: "Eloquia";
+   src: url('../fonts/Eloquia/EloquiaDisplay-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Eloquia/EloquiaDisplay-ExtraBold.woff') format('woff');
+   font-display: swap;
+}

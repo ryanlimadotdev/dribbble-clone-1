@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Green-cube</title>
+	<meta 
+		http-equiv="Content-Security-Policy"
+		content= "
+		default-src 'self'
+		script-source 'unsafe-inline'
+		'sha256-D17IF5mWA26YLd+M4OUCeKaA5C1mtkTSvDqZJd8j0lc='
+	">
+	<link rel="favicon" href="favicon.ico">
+	<meta http-equiv="Cache-Control" content="max-age=31536000">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Green-cube lets you find the right individual for any challenge from development to a marketing promotion.">
+	<link rel="stylesheet" href="css/fonts.css" media="none">
+	<link rel="stylesheet" href="css/style.css" media="none">
+</head>
+<body>
+	<header>
+		<div id="top">
+			<h1>
+				<img src="img/logo.webp" alt="logo">
+				<span>
+					green-cube
+				</span>
+			</h1>
+			<nav id="menu">
+				<input type="checkbox" id="show-menu">
+				<label for="show-menu">|||</label>
+				<ul>
+					<li><a href="#">Features</a></li>
+					<li><a href="#">Solutions</a></li>
+					<li><a href="#">Resources</a></li>
+					<li><a href="#">Pricing</a></li>
+				</ul>
+			</nav>
+			<nav id="sign-form">
+				<ul>
+					<li><a href="#">Log—in</a></li>
+					<li><a href="#">Sign up</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div id="middle">
+			<div>
+				<picture>
+					<source media="(max-width:520px)" src="img/banner-w520.webp" alt="...">
+					<img src="img/banner-w800.webp" alt="...">
+				</picture>
+				</div>
+				<div>
+					<h2>
+						Find a  <mark>skilled</mark> <mark>individual</mark> to do the job.
+					</h2>
+					<p>
+						Green-cube lets you find the right individual <br>
+						for any challenge from development to a <br>
+						marketing promotion. 
+					</p>
+					<div>
+						<button>
+							<a id="get-started" href="#">
+								Get started
+								<img src="img/get-started.webp" alt="Get started">
+							</a>
+						</button>
+						<button>
+							<a id="watch-video" href="#">
+								Watch video
+								<img src="img/watch-video.webp" alt="">
+							</a>
+
+						</button>
+					</div>
+				</div>
+			</div>
+			<div id="bottom">
+				<span>Scan it <img src="img/qr.webp" alt="qr-code"></span>
+			</div>
+		</header>
+		<script type="text/javascript">
+			window.onload = (event) => {
+				let links = document.querySelectorAll('link');
+				links.forEach(element => element.media='all');
+			};
+		</script>
+	</body>
+	</html>

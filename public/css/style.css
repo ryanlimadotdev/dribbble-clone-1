@@ -1,0 +1,267 @@
+* {
+	color: #fff;
+	font: normal 16px "Gordita";
+	text-decoration: none;
+	z-index: 0;
+	padding: 0;
+	margin: 0;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	overflow-x: hidden;
+	background-color: transparent;
+}
+header > div#top > h1 > span {
+	margin-left: 10px;
+	color: #b9b9b9;
+	vertical-align: top;
+	font: bold 18px "Gordita";
+	line-height: 50px;
+}
+
+header > div#top > h1 > img {
+	width: auto;
+	height: 40px;
+	aspect-ratio: attr(width) / attr(height);
+}
+header > div#top {
+	display: flex;
+	justify-content: space-between;
+}
+header > div > nav#menu > label {
+	display: none;
+} 
+header > div > nav#menu > input#show-menu {
+	display: none;
+}
+header > div > nav#menu > ul {
+	list-style: none;
+}
+header > div > nav#menu > ul > li {
+	display: inline-block;
+}
+header > div > nav#menu > ul > li > a{
+	display: inline-block;
+	padding: 15px 20px;
+	color: #b9b9b9;
+}
+
+header > div > nav#sign-form > ul {
+	list-style: none;
+}
+header > div > nav#sign-form > ul > li {
+	display: inline-block;
+}
+header > div > nav#sign-form > ul > li > a {
+	display: inline-block;
+	color: #b9b9b9;
+	padding: 15px 35px;
+}
+
+header > div > nav#sign-form > ul > li:last-child > a {
+	border-radius: 50%;
+	border: 1px solid #b9b9b9;
+}
+header > div#middle {
+	margin-top: 30px;
+}
+
+header > div#middle > div {
+	padding: 80px;
+	width: 49%;
+	vertical-align: top;
+	display: inline-block;
+}
+header > div#middle > div > picture > img, 
+header > div#middle > div > picture > source
+{
+	width: 100%;
+}
+header > div#middle > div > h2 {
+	margin-top: 80px;
+	font: normal 80px "Eloquia";
+}
+header > div#middle > div > h2 > mark:first-child {
+	font: inherit;
+	background-color: transparent;
+	color: #f8aeda;
+}
+header > div#middle > div > h2 > mark:last-child {
+	font: inherit;
+	background-color: transparent;
+	color: #11957d;
+}
+header > div#middle > div > p {
+	color: #b9b9b9;
+	padding: 60px 0;
+	font-size: 18px;
+}
+header > div#middle > div > div > button > a {
+	display: inline-block;
+	font-size: 0;
+	padding: 10px;
+	height: 100px;
+
+}
+header > div#middle > div > div > button > a > img{
+	height: 100%;
+}
+
+
+header > div#bottom {
+	display: flex;
+	justify-content: right;
+}
+header > div#bottom > span {
+	font-size: 14px;
+	color: #b9b9b9;
+	overflow: hidden;
+	vertical-align: middle;
+	display: inline-block;
+	height: 35px;
+	line-height: 35px;
+} 
+header > div#bottom > span > img {
+	margin-left: 10px;
+	vertical-align: inherit;
+	height: 100%;	
+}
+
+body {
+	padding: 35px;
+	overflow: hidden;
+	background: #000;
+}
+@media (max-width: 1080px) {
+	header > div#middle > div:last-child > h2 {
+		margin-top: 0;
+	}
+}
+
+@media (max-width: 999px) {
+	body {
+		padding: 0;
+	}
+	header div#top > h1 {
+		padding: 20px 20px 0;
+	}
+	header > div#top {
+		display: block;
+	}
+	header > div#top > nav#menu {
+		margin-top: 30px;
+	}
+	header > div#top > nav#menu > ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	header > div#top > nav#sign-form {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+	}
+	header > div#middle > div{
+		width: 100%;
+		padding: 20px;
+	}
+
+	header > div#middle > div:last-child > h2 {
+		margin-top: 0;
+		text-align: right;
+	}
+	header > div#middle > div:last-child > p {
+		text-align: center;
+	}
+	header > div#middle > div:last-child > p > br {
+		content: "";
+	}
+	header > div#middle > div:last-child > p > br:after {
+		content: " ";
+	}
+
+}
+@media (max-width: 520px) {
+	header > div#top {
+		/*padding: 20px;*/
+		display: block;
+	}
+	header > div#top > nav#menu > label {
+		display: inline-block;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		z-index: 2;
+		border-radius: 50%;
+		background-color: #12957d;
+		font: bold 20px Arial;
+		cursor: pointer;
+		transform: rotate(90deg);
+		text-align: center;
+		height: 40px;
+		width: 40px;
+		line-height: 40px;
+
+	}
+	header > div#top > nav#menu > ul {
+		position: fixed;
+		top: -100vh;
+		left: 0;
+		margin: 0;
+		display: inline-block;
+		z-index: 1;
+		height: 100vh;	
+		width: 110vw;
+		padding: 100px 0;
+		overflow-y: scroll;
+		background-color: rgba(0, 0, 0, .9);
+		transition: top .15s linear 0s;
+	}
+	header > div#top > nav#menu > ul > li{
+		display: inline-block;
+		width: 100vw;
+	}
+	header > div#top > nav#menu > ul > li > a{
+		width: 100vw;
+		color: transparent;
+		font: bold 20px "Gordita";
+		line-height: 50px;
+		text-align: center;
+		transition: color .075s linear 0s;
+
+	}
+	header > div > nav#menu > input#show-menu:checked ~ ul {
+		top: 0;
+	}
+	header > div > nav#menu > input#show-menu:checked ~ ul > li > a{
+		color: #fff;
+		transition: color .075s linear .15s;
+	}
+	header > div#top > nav#sign-form {
+		position: relative;
+		text-align: center;
+		top: 0;
+		left: 0;
+	}
+	header > div > nav#menu > ul > li > a {
+		font-size: 12px;
+	}
+	header > div#middle > div:first-child {
+		padding: 20px;
+	}
+	header > div#middle > div:last-child {
+		padding: 100px 20px 80px;
+	}
+
+	header > div#middle > div > div > button {
+		width: 100%;
+	}
+	header > div#middle > div > div > button > a {
+		display: inline-block;
+		padding: 10px 20px;
+		text-align: center;
+	}
+
+	header > div#bottom {
+		padding: 30px;
+	}
+}
